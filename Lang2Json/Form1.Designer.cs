@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
             tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel2 = new TableLayoutPanel();
             textBox2 = new TextBox();
@@ -45,24 +43,6 @@
             tableLayoutPanel3.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
             SuspendLayout();
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(3, 3);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.ScrollBars = ScrollBars.Vertical;
-            textBox3.Size = new Size(492, 94);
-            textBox3.TabIndex = 1;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(501, 3);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.ScrollBars = ScrollBars.Vertical;
-            textBox4.Size = new Size(471, 443);
-            textBox4.TabIndex = 3;
             // 
             // tableLayoutPanel1
             // 
@@ -209,8 +189,6 @@
         }
 
         #endregion
-        private TextBox textBox3;
-        private TextBox textBox4;
         private TableLayoutPanel tableLayoutPanel1;
         private TableLayoutPanel tableLayoutPanel2;
         private TextBox textBox2;
