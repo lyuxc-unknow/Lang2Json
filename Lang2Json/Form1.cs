@@ -39,14 +39,7 @@ namespace Lang2Json
                 if ((!lang[i].StartsWith("#") || lang[i].Contains("=")) && lang[i].Length != 0)
                 {
                     temp = lang[i].Split("=");
-                    if (temp[1].Contains("\\"))
-                    {
-                        temp[1] = temp[1].Replace("\\", "\\\\");
-                    }
-                    if (temp[1].Contains("\""))
-                    {
-                        temp[1] = temp[1] = temp[1].Replace("\"", "\\\"");
-                    }
+                    temp[1] = temp[1].Replace("\\", "\\\\").Replace("\"", "\\\"");
                     temp_text += "\r\n    \"" + temp[0] + "\"" + ": " + "\"" + temp[1] + "\"";
                     if (i != lang.Length - 1) temp_text += ",";
                 }
